@@ -1,4 +1,4 @@
-package com.prajwalhs.learningdashboard.ui.theme
+package com.prajwalhs.learningdashboard.presentation.theme
 
 import androidx.compose.ui.graphics.Color
 
