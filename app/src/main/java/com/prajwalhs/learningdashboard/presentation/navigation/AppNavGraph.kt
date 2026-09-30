@@ -2,10 +2,12 @@ package com.prajwalhs.learningdashboard.presentation.navigation
 
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.lifecycle.compose.dropUnlessResumed
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.prajwalhs.learningdashboard.presentation.coursedetail.CourseDetailScreen
 import com.prajwalhs.learningdashboard.presentation.dashboard.DashboardScreen
 import com.prajwalhs.learningdashboard.presentation.login.LoginScreen
 
@@ -33,9 +35,21 @@ fun AppNavGraph(
 
         composable<AppRoute.Dashboard> {
             DashboardScreen(
-                onCourseClick = { // TODO: Add this later
+                onCourseClick = { courseId ->
+                    navController.navigate(AppRoute.CourseDetail(courseId)) {
+                        launchSingleTop = true // a double tap does not open the screen twice
+                    }
                 },
             )
         }
+
+        composable<AppRoute.CourseDetail> {
+            CourseDetailScreen(
+                // Ignores clicks while the screen is not RESUMED (e.g. mid-transition),
+                // so a fast double tap cannot pop two screens.
+                onBackClick = dropUnlessResumed { navController.navigateUp() },
+            )
+        }
+
     }
 }

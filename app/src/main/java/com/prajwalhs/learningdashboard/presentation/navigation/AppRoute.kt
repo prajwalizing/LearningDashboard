@@ -13,4 +13,7 @@ sealed interface AppRoute {
 
     @Serializable
     data object Dashboard : AppRoute
+
+    @Serializable
+    data class CourseDetail(val courseId: Int) : AppRoute
 }

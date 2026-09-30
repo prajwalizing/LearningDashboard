@@ -40,4 +40,15 @@
         <item quantity="other">%1$d lessons</item>
     </plurals>
 
+    <!-- Course detail -->
+    <string name="action_back">Back</string>
+    <string name="lessons_header">Lessons</string>
+    <string name="lessons_completed_summary">%1$d of %2$d lessons completed</string>
+    <string name="lesson_status_completed">✓ Completed</string>
+    <string name="lesson_status_pending">○ Pending</string>
+    <string name="action_mark_complete">Mark complete</string>
+    <string name="course_not_found_title">Course not found</string>
+    <string name="course_not_found_message">This course is no longer available.</string>
+    <string name="action_go_back">Go back</string>
+
 </resources>
