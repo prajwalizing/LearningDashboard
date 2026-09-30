@@ -13,4 +13,21 @@
     <string name="error_invalid_credentials">Invalid email or password.</string>
     <string name="error_unknown">Something went wrong. Please try again.</string>
 
+    <!-- Login -->
+    <string name="login_title">Welcome back</string>
+    <string name="login_subtitle">Sign in to continue learning</string>
+    <string name="label_email">Email</string>
+    <string name="label_password">Password</string>
+    <string name="action_login">Log in</string>
+    <string name="action_show_password">Show</string>
+    <string name="action_hide_password">Hide</string>
+    <string name="login_demo_hint">Demo account: student@demo.com / password123</string>
+    <string name="error_email_empty">Email is required.</string>
+    <string name="error_email_invalid">Enter a valid email address.</string>
+    <string name="error_password_empty">Password is required.</string>
+    <string name="error_password_too_short">Password must be at least %1$d characters.</string>
+
+
+
+
 </resources>
