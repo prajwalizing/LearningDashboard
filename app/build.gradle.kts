@@ -26,8 +26,7 @@ android {
         buildConfigField(
             "String",
             "BASE_URL",
-            "\"https://raw.githubusercontent.com/prajwalhs/LearningDashboard/main/mock-api/\""
-            // TODO: Change this userName later
+            "\"https://raw.githubusercontent.com/prajwalizing/LearningDashboard/main/mock-api/\""
         )
 
     }

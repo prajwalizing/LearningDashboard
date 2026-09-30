@@ -27,7 +27,17 @@
     <string name="error_password_empty">Password is required.</string>
     <string name="error_password_too_short">Password must be at least %1$d characters.</string>
 
-
-
+    <!-- Dashboard -->
+    <string name="dashboard_title">My Courses</string>
+    <string name="empty_courses_title">No courses yet</string>
+    <string name="empty_courses_message">Courses you enroll in will appear here.</string>
+    <string name="action_refresh">Refresh</string>
+    <string name="action_start">Start</string>
+    <string name="action_continue">Continue</string>
+    <string name="action_review">Review</string>
+    <plurals name="lesson_count">
+        <item quantity="one">%1$d lesson</item>
+        <item quantity="other">%1$d lessons</item>
+    </plurals>
 
 </resources>

@@ -1,16 +1,12 @@
 package com.prajwalhs.learningdashboard.presentation.navigation
 
-
-import androidx.compose.foundation.layout.Box
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
-import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.prajwalhs.learningdashboard.presentation.dashboard.DashboardScreen
 import com.prajwalhs.learningdashboard.presentation.login.LoginScreen
 
 @Composable
@@ -36,10 +32,10 @@ fun AppNavGraph(
         }
 
         composable<AppRoute.Dashboard> {
-            // Temporary placeholder, replaced by DashboardScreen in the next commit.
-            Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
-                Text(text = "Dashboard")
-            }
+            DashboardScreen(
+                onCourseClick = { // TODO: Add this later
+                },
+            )
         }
     }
 }
