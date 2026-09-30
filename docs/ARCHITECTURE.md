@@ -347,7 +347,7 @@ Required swaps: Retrofit → Ktor, Hilt → Koin. Room supports KMP and stays. T
 
 ---
 
-## 15. Known limitations (deliberate, given the 3-hour scope)
+## 15. Known limitations (deliberate, given the limited scope)
 
 - Mock authentication with a plain-DataStore token; no logout UI.
 - No server-side progress sync or pending-changes queue.
